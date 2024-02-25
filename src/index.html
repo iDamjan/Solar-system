@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar system</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <div class="loader">
+      <div data-js="astro" class="astronaut">
+        <div class="head"></div>
+        <div class="arm arm-left"></div>
+        <div class="arm arm-right"></div>
+        <div class="body">
+          <div class="panel"></div>
+        </div>
+        <div class="leg leg-left"></div>
+        <div class="leg leg-right"></div>
+        <div class="schoolbag"></div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <p class="explanation-mars">
+        Mars is the fourth planet from the Sun. The surface of Mars is
+        orange-red because it is covered in iron(III) oxide dust, giving it the
+        nickname "the Red Planet". Mars hosts many enormous extinct volcanos and
+        one of the largest canyons in the Solar System. For comparison, Mars's
+        diameter is 6,779 km.
+      </p>
+      <button class="btn-close-content">Close</button>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
