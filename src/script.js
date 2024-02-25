@@ -49,7 +49,7 @@ const canvas = document.querySelector("canvas.webgl");
 const gltfLoader = new GLTFLoader();
 const fbxLoader = new FBXLoader();
 
-fbxLoader.load("/Models/saturn.fbx", (fbx) => {
+fbxLoader.load("Models/saturn.fbx", (fbx) => {
   console.log(fbx);
   scene.add(fbx.children[0], fbx.children[1]);
 });
@@ -86,20 +86,20 @@ scene.backgroundIntensity = 0.5;
  */
 const textureLoader = new THREE.TextureLoader();
 
-const startsTexture = textureLoader.load("/textures/start-texture.jpg");
-const sunTexture = textureLoader.load("/textures/sun.jpg");
-const marsTexture = textureLoader.load("/textures/mars.jpg");
-const mercuryTexture = textureLoader.load("/textures/mercury.jpg");
-const venusTexture = textureLoader.load("/textures/venus.jpg");
-const earthTexture = textureLoader.load("/textures/earthColorMap.jpg");
+const startsTexture = textureLoader.load("textures/start-texture.jpg");
+const sunTexture = textureLoader.load("textures/sun.jpg");
+const marsTexture = textureLoader.load("textures/mars.jpg");
+const mercuryTexture = textureLoader.load("textures/mercury.jpg");
+const venusTexture = textureLoader.load("textures/venus.jpg");
+const earthTexture = textureLoader.load("textures/earthColorMap.jpg");
 const earthDisplacementTexture = textureLoader.load(
-  "/textures/earthDisplacementMap.jpg"
+  "textures/earthDisplacementMap.jpg"
 );
-const jupiterTexture = textureLoader.load("/textures/jupiter.jpg");
+const jupiterTexture = textureLoader.load("textures/jupiter.jpg");
 const saturnTexture = textureLoader.load("textures/saturn.jpg");
-const saturnRingsOpacity = textureLoader.load("/textures/rings.png");
-const uranusTexture = textureLoader.load("/textures/uranus.jpg");
-const neptuneTexture = textureLoader.load("/textures/neptune.jpg");
+const saturnRingsOpacity = textureLoader.load("textures/rings.png");
+const uranusTexture = textureLoader.load("textures/uranus.jpg");
+const neptuneTexture = textureLoader.load("textures/neptune.jpg");
 
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 
@@ -116,7 +116,7 @@ const cubeTextureLoader = new THREE.CubeTextureLoader();
 // scene.background = environmentMap;
 
 // HDR (RGBE) equirectangular
-rgbeLoader.load("/stars2kEnvMap.hdr", (environmentMap) => {
+rgbeLoader.load("stars2kEnvMap.hdr", (environmentMap) => {
   environmentMap.mapping = THREE.EquirectangularReflectionMapping;
 
   scene.background = environmentMap;
